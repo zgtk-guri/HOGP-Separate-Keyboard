@@ -345,12 +345,12 @@ $EndComp
 $Comp
 L C C4
 U 1 1 5A49C99D
-P 2750 2800
-F 0 "C4" H 2775 2900 50  0000 L CNN
-F 1 "0.1u" H 2775 2700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2788 2650 50  0001 C CNN
-F 3 "" H 2750 2800 50  0000 C CNN
-	1    2750 2800
+P 6550 2200
+F 0 "C4" H 6575 2300 50  0000 L CNN
+F 1 "0.1u" H 6575 2100 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6588 2050 50  0001 C CNN
+F 3 "" H 6550 2200 50  0000 C CNN
+	1    6550 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -919,12 +919,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 2900 3100 2900
 Wire Wire Line
-	2750 2650 2750 2600
-Connection ~ 2750 2600
-Wire Wire Line
-	2750 2950 2750 3000
-Connection ~ 2750 3000
-Wire Wire Line
 	2400 2650 2400 2600
 Connection ~ 2400 2600
 Wire Wire Line
@@ -1018,11 +1012,11 @@ Wire Wire Line
 Wire Wire Line
 	2000 7300 2000 7200
 Wire Wire Line
-	6800 2400 6850 2400
+	6550 2400 6850 2400
 Wire Wire Line
 	6800 2200 6800 2450
 Wire Wire Line
-	6850 2000 6800 2000
+	6550 2000 6850 2000
 Wire Wire Line
 	6800 2000 6800 1950
 Wire Wire Line
@@ -1188,5 +1182,10 @@ Connection ~ 6750 6350
 Wire Wire Line
 	7150 6350 7250 6350
 Text GLabel 7250 6350 2    60   Output ~ 0
-USB_Detect
+USBDetect
+Wire Wire Line
+	6550 2000 6550 2050
+Connection ~ 6800 2000
+Wire Wire Line
+	6550 2400 6550 2350
 $EndSCHEMATC
